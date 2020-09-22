@@ -9,7 +9,7 @@ pretrained_model=./weights/ilsvrc-cls_rna-a1_cls1000_ep-0001.params
 
 ## 4) Please specify the path to the model for each round
 R1_extractor_model=./weights/res38_cls.pth
-R2_extractor_model=${save_folder}/weight/k10_R1_resnet_cls_ep40.pth
+R2_extractor_model=${save_folder}/weight/k10_R1_resnet_cls_ep30.pth
 R3_extractor_model=${save_folder}/weight/k10_R2_resnet_cls_ep40.pth
 final_model=${save_folder}/weight/k10_R3_resnet_cls_ep50.pth \
 

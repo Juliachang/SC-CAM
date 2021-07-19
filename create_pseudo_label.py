@@ -158,12 +158,7 @@ if __name__ == '__main__':
     # find the keep/remove index list
     keep_idx_list, remove_idx_list = remove_duplicate_label(repeat_list)
 
-
-
-    if args.for_round_nb == 1:
-        features = np.load('{}/R{}_feature.npy'.format(feature_folder_path, args.for_round_nb-1))
-    else:
-        features = np.load('{}/R{}_feature.npy'.format(feature_folder_path, args.for_round_nb-1))
+    features = np.load('{}/R{}_feature.npy'.format(feature_folder_path, args.for_round_nb-1))
 
     print(len(filenamelist), cls20_label.shape, features.shape)    # 10582, (10582, 20), (10582, 4096)
 
